@@ -7,7 +7,10 @@ const { cartItem, removeFromCart } = useCart();
 
 <template>
   <div class="cart-page">
-    <h1>My Web Store</h1>
+    <NuxtLink to="/">
+      <h1>My Web Store</h1>
+    </NuxtLink>
+
     <div v-if="cartItem.length === 0">No item in cart</div>
     <div v-else class="cart-card" v-for="(item, index) in cartItem">
       <img class="image" :src="`${item.image}`" />

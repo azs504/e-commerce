@@ -2,6 +2,7 @@
 import useProducts from "../hooks/useProducts";
 import ProductCard from "../component/ProductCard.vue";
 import ColoredButton from "../component/ColoredButton.vue";
+import CartButton from "../component/CartButton.vue";
 
 const router = useRouter();
 const route = useRoute();
@@ -36,6 +37,9 @@ const handleClick = (productId: number) => {
 <template>
   <div class="home-page">
     <h1>My Web Store</h1>
+
+    <CartButton />
+
     <NuxtLink class="button" to="/">
       <ColoredButton context="All" />
     </NuxtLink>

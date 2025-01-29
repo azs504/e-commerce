@@ -3,6 +3,7 @@ import useCart from "../../../hooks/useCart";
 import type { Product } from "../../../interface/homePage";
 import CTAButton from "../../../component/CTAButton.vue";
 import Dialog from "../../../component/Dialog.vue";
+import CartButton from "../../../component/CartButton.vue";
 
 const { addToCart } = useCart();
 const route = useRoute();
@@ -34,6 +35,9 @@ const handleAddCart = () => {
 <template>
   <div class="buy-page">
     <h1>My Web Store</h1>
+
+    <CartButton />
+
     <div v-if="product.data" class="container">
       <img class="picture" :src="product.data.image" />
       <div class="context">
