@@ -1,0 +1,1 @@
+import{m as o,o as e,c as n,t as s,_ as a}from"./DvD84pqe.js";const c={class:"gray-button"},r=o({__name:"ColoredButton",props:{context:{}},setup(_){return(t,p)=>(e(),n("button",c,s(t.context),1))}}),m=a(r,[["__scopeId","data-v-52283703"]]);export{m as C};
